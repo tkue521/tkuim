@@ -29,10 +29,10 @@ detector = cv2.CascadeClassifier(args["cascade"])
 # 初始化影像串流並讓攝影機預熱
 print("[INFO] starting video stream...")
 # if on raspberry pi use the pi camera
-if platform.system() == 'Linux':
-	vs = VideoStream(usePiCamera=True).start()
-else:
-	vs = VideoStream(src=0).start()
+#if platform.system() == 'Linux':
+#	vs = VideoStream(usePiCamera=True).start()
+#else:
+vs = VideoStream(src=0).start()
 
 time.sleep(2.0)
 
