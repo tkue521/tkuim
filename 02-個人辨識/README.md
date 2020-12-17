@@ -4,6 +4,8 @@
 #### 使用方式
 0. 先將所需要的套件裝好
    ```bash
+   sudo raspi-config # Enable Camera Interface, Reboot
+   sudo apt-get update && sudo apt-get -y install libatlas-base-dev libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasper-dev libqtgui4 libqt4-test
    pip install imutils opencv-python face_recognition
    ```
 1. 建立自己學號的資料夾，並使用以下指令開啟攝影機開始做影像收集：
